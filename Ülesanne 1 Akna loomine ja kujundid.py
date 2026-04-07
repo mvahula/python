@@ -36,6 +36,7 @@ pygame.display.flip()
 #teen nii, et programmi saab ilusti kinni panna
 tootab = True
 while tootab:
-    for midagi in pygame.event.get():
-        if midagi.type == pygame.QUIT:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
             tootab = False
+pygame.quit()
